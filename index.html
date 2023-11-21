@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beuty Zone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="/"><img src="./images/logo.svg" alt="Логотип" /></a>
-        <ul>
-          <li class="link"><a href="">Про нас</a></li>
-          <li class="link"><a href="">Чому ми</a></li>
-          <li class="link"><a href="">Наші процедури</a></li>
-          <li class="link"><a href="">Контакти</a></li>
+        <ul class="menu-top">
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Чому ми</a></li>
+          <li><a href="#">Наші процедури</a></li>
+          <li><a href="#">Контакти</a></li>
         </ul>
       </nav>
-      <div class="icons">
+      <div class="top-socials-icon">
         <a href="#">
-          <svg class="top-socials-icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-phone"></use>
+          <svg>
+            <use href="./images/sprites.svg#icon-telephone"></use>
           </svg>
         </a>
         <a href="#">
-          <svg class="top-socials-icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-facebook"></use>
+          <svg>
+            <use href="./images/sprites.svg#icon-facebook"></use>
           </svg>
         </a>
         <a href="#">
-          <svg class="top-socials-icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-instagram"></use>
+          <svg>
+            <use href="./images/sprites.svg#icon-instagram"></use>
           </svg>
         </a>
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero-section">
         <div class="sub-title">Косметологічна клініка</div>
-        <h1>Beauty Zone</h1>
+        <h1 class="two-line-title">
+          <span>Beauty</span>
+          <span>Zone</span>
+        </h1>
         <button type="button">Замовити дзвінок</button>
         <p class="description">
           Запишись та отримай безкоштовну консультацію нашого косметолога
@@ -51,18 +58,27 @@
           шкірою обличчя та тіла.
         </p>
         <p>
-          B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
-          приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам
-          підтримувати свою красу та молодість. З нами краса назавжди!
+          B <span class="brand">beauty zone</span> ми гарантуємо найвищі стандарти
+          якості та приємний сервіс. Наші косметологічні процедури та препарати
+          допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
         </p>
-        <img src="./images/faces.jpg" alt="Приклад резлуьтату роботи" />
+        <img
+          class="cirlce"
+          src="./images/face-one.jpg"
+          alt="Приклад резлуьтату роботи"
+        />
+        <img
+          class="cirlce"
+          src="./images/face-two.jpg"
+          alt="Приклад резлуьтату роботи"
+        />
       </section>
       <section>
         <h2>Чому люди <span>обирають нас</span></h2>
-        <ul>
+        <ul class="cards-one">
           <li>
             <svg class="top-socials-icon" width="48" height="48">
-              <use href="./images/icons.svg#icon-card1"></use>
+              <use href="./images/sprites.svg#icon-science"></use>
             </svg>
             <p>
               Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
@@ -71,7 +87,7 @@
           </li>
           <li>
             <svg class="top-socials-icon" width="48" height="48">
-              <use href="./images/icons.svg#icon-card2"></use>
+              <use href="./images/sprites.svg#icon-medicine"></use>
             </svg>
             <p>
               Використовуємо тільки професійне обладнання та косметику, перевірену
@@ -80,7 +96,7 @@
           </li>
           <li>
             <svg class="top-socials-icon" width="48" height="48">
-              <use href="./images/icons.svg#icon-card"></use>
+              <use href="./images/sprites.svg#icon-crown"></use>
             </svg>
             <p>
               Наша мета - підкреслити переваги та приховати недоліки, а не переробити
@@ -90,19 +106,34 @@
       </section>
       <section>
         <h2>Наші <span>процедури</span></h2>
-        <ul>
+        <ul class="cards-two">
           <li>
             <article>
+              <img
+                class="format-card__image"
+                src="./images/card-one.jpg"
+                alt="Маски для обличчя"
+              />
               <h3>Маски для обличчя</h3>
             </article>
           </li>
           <li>
             <article>
+              <img
+                class="format-card__image"
+                src="./images/card-two.jpg"
+                alt="Ін'єкції для обличчя"
+              />
               <h3>Ін'єкції для обличчя</h3>
             </article>
           </li>
           <li>
             <article>
+              <img
+                class="format-card__image"
+                src="./images/card-three.jpg"
+                alt="Очищення обличчя"
+              />
               <h3>Очищення обличчя</h3>
             </article>
           </li>
@@ -119,17 +150,22 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <p>Запишіться безкоштовно та отримайте подарунок</p>
+        <div class="form">
+          <h4>Запишіться <span>безкоштовно</span> та отримайте подарунок</h4>
+          <p class="description">
+            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+          </p>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <nav>
         <a href="/"><img src="./images/logo.svg" alt="Логотип" /></a>
-        <ul>
-          <li class="link"><a href="">Про нас</a></li>
-          <li class="link"><a href="">Чому ми</a></li>
-          <li class="link"><a href="">Наші процедури</a></li>
-          <li class="link"><a href="">Контакти</a></li>
+        <ul class="menu-footer">
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Чому ми</a></li>
+          <li><a href="#">Наші процедури</a></li>
+          <li><a href="#">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -144,20 +180,20 @@
             >
           </li>
         </ul>
-        <div class="icons">
+        <div class="footer-socials-icon">
           <a href="#">
-            <svg class="footer-socials-icon" width="42" height="42">
-              <use href="./images/icons.svg#icon-phone"></use>
+            <svg>
+              <use href="./images/sprites.svg#icon-telephone"></use>
             </svg>
           </a>
           <a href="#">
-            <svg class="footer-socials-icon" width="42" height="42">
-              <use href="./images/icons.svg#icon-facebook"></use>
+            <svg>
+              <use href="./images/sprites.svg#icon-facebook"></use>
             </svg>
           </a>
           <a href="#">
-            <svg class="footer-socials-icon" width="42" height="42">
-              <use href="./images/icons.svg#icon-instagram"></use>
+            <svg>
+              <use href="./images/sprites.svg#icon-instagram"></use>
             </svg>
           </a>
         </div>

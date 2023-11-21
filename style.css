@@ -1,4 +1,217 @@
-root: {
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-light: #2b7fff;
+  --color-default-text: #000000;
+  --color-alt-text: #4a4a4a;
+  --color-footer: #ffffff;
 }
+/* FONTS */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+ul {
+  list-style-type: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: 'Play', sans-serif;
+}
+img {
+  vertical-align: top;
+}
+body,
+html {
+  height: 100%;
+}
+address {
+  display: block;
+  font-style: normal;
+}
+/* Main CSS */
 body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary-dark);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* menu-links */
+.menu-top a:hover {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+.menu-top a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu-footer a:hover {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+.menu-footer a {
+  color: var(--color-footer);
+  text-decoration: none;
+}
+/* top-icons */
+.top-socials-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-alt-text);
+}
+/* main-sections */
+.sub-title {
+  font-size: 18px;
+}
+.hero-section {
+  background: url(./images/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+h1 {
+  color: var(--color-primary-light);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.7;
+  text-transform: capitalize;
+}
+.two-line-title {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; Це вирівнює текст */
+}
+.two-line-title span {
+  white-space: nowrap;
+}
+/* button */
+button {
+  color: var(--color-footer);
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 15px;
+  margin: 15px;
+}
+button:hover {
+  color: var(--color-primary-light);
+  background-color: transparent;
+}
+.description {
+  color: var(--color-alt-text);
+  font-size: 12px;
+}
+h2 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  width: 450px; /*Це для візуального прикладу */
+}
+h2 span {
+  color: var(--color-primary-light);
+  text-transform: capitalize;
+}
+.brand {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+ul.cards-one p {
+  color: var(--color-default-text);
+}
+.cards-one svg {
+  fill: var(--color-primary-light);
+}
+ul.cards-two h3 {
+  color: var(--color-footer);
+}
+h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-footer);
+}
+h4 span {
+  color: var(--color-primary-light);
+}
+.form {
+  background-color: var(--color-primary-dark);
+}
+.cirlce {
+  width: 335px;
+  height: 328px;
+  border-radius: 50%;
+}
+/* footer */
+.footer {
+  background-color: #011c44;
+  color: var(--color-footer);
+  font-size: 16px;
+}
+.footer a {
+  color: var(--color-footer);
+}
+/* footer-icons */
+.footer-socials-icon svg {
+  width: 42px;
+  height: 42px;
+  fill: var(--color-footer);
 }
