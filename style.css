@@ -107,6 +107,7 @@ body {
   fill: var(--color-alt-text);
 }
 /* main-sections */
+/* hero-section */
 .sub-title {
   font-size: 18px;
 }
@@ -151,6 +152,7 @@ button:hover {
   color: var(--color-alt-text);
   font-size: 12px;
 }
+/* section-two */
 h2 {
   font-family: 'Play', sans-serif;
   font-size: 64px;
@@ -167,6 +169,12 @@ h2 span {
   font-weight: 600;
   text-transform: capitalize;
 }
+.cirlce {
+  width: 335px;
+  height: 328px;
+  border-radius: 50%;
+}
+/* section-three */
 ul.cards-one p {
   color: var(--color-default-text);
 }
@@ -175,12 +183,14 @@ ul.cards-one p {
   width: 48px;
   height: 48px;
 }
+/* section-four */
 h3 {
   font-family: 'Play', sans-serif;
 }
 ul.cards-two h3 {
   color: var(--color-footer);
 }
+/* section-five */
 h4 {
   font-size: 22px;
   font-weight: 600;
@@ -192,11 +202,6 @@ h4 span {
 }
 .form {
   background-color: var(--color-primary-dark);
-}
-.cirlce {
-  width: 335px;
-  height: 328px;
-  border-radius: 50%;
 }
 /* footer */
 .footer {
