@@ -185,7 +185,7 @@ h4 {
   font-size: 22px;
   font-weight: 600;
   color: var(--color-footer);
-  font-family: 'Roboto' sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 h4 span {
   color: var(--color-primary-light);
