@@ -167,9 +167,6 @@ h2 span {
   font-weight: 600;
   text-transform: capitalize;
 }
-h3 {
-  font-family: 'Play', sans-serif;
-}
 ul.cards-one p {
   color: var(--color-default-text);
 }
@@ -177,6 +174,9 @@ ul.cards-one p {
   fill: var(--color-primary-light);
   width: 48px;
   height: 48px;
+}
+h3 {
+  font-family: 'Play', sans-serif;
 }
 ul.cards-two h3 {
   color: var(--color-footer);
